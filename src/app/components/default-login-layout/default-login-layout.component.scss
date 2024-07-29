@@ -1,0 +1,88 @@
+@import "../../../styles/variables.scss";
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .main-section {
+        gap: 8px;
+        flex-grow: 1;
+        background-color: $gray-background;
+    }
+
+    .form-section {
+        flex-grow: 0.3;
+        padding: 0 35px;
+
+        img {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 45px;
+        }
+
+        .btn-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 30px;
+
+            .divider {
+                font-size: 14px;
+                color: $gray-background;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                text-transform: uppercase;
+                width: 100%;
+
+                div {
+                    flex-grow: 1;
+                    background-color: $gray-background;
+                    height: 2px;
+                }
+            }
+
+            button {
+                width: 100%;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 500;
+                border: none;
+                background-color: transparent;
+                padding: 12px 0;
+                cursor: pointer;
+
+                &.btn-primary {
+                    background-color: $primary-color;
+                    color: white;
+                    box-shadow: 0px 8px 12px rbga(148, 64, 255, 0);
+                }
+
+                &.btn-secondary {
+                    border: solid 1px $primary-color;
+
+                }
+
+            }
+
+        }
+    }
+}
