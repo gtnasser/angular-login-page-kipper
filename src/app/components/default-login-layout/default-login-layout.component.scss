@@ -5,6 +5,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 100%;
 
     section {
         display: flex;
@@ -70,6 +71,10 @@ main {
                 padding: 12px 0;
                 cursor: pointer;
 
+                &:disabled {
+                    opacity: 0.5;
+                    cursor: default;
+                }
                 &.btn-primary {
                     background-color: $primary-color;
                     color: white;
